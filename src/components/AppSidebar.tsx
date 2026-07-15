@@ -36,8 +36,8 @@ export function AppSidebar() {
     <Sidebar collapsible="icon">
       <SidebarHeader className="border-b border-sidebar-border">
         <div className="flex items-center gap-2.5 px-2 py-3">
-          <div className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-gradient-to-br from-primary to-primary/60 text-primary-foreground shadow-lg shadow-primary/20">
-            <Sparkles className="h-4 w-4" />
+          <div className="relative h-9 w-9 shrink-0 rounded-full bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 shadow-lg shadow-indigo-500/30 ring-1 ring-white/10">
+            <div className="absolute inset-1 rounded-full bg-gradient-to-tr from-blue-400/40 to-purple-300/60 blur-[2px]" />
           </div>
           <div className="min-w-0 group-data-[collapsible=icon]:hidden">
             <div className="truncate text-sm font-semibold tracking-tight">Cortex</div>
