@@ -96,8 +96,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Overview — Cortex AI Workplace" },
       { name: "twitter:description", content: "Your Cortex activity, generation stats, and productivity insights at a glance." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3b621d29-6362-429f-9dfc-22d0b7711718/id-preview-62537d2b--36f252f1-a963-4187-8011-de9b7ecdb084.lovable.app-1784183813475.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3b621d29-6362-429f-9dfc-22d0b7711718/id-preview-62537d2b--36f252f1-a963-4187-8011-de9b7ecdb084.lovable.app-1784183813475.png" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/423475ef-7303-463b-8807-2393bbb71c4f" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/423475ef-7303-463b-8807-2393bbb71c4f" },
     ],
     links: [
       {
