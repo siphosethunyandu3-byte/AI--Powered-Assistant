@@ -96,8 +96,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Overview — Cortex AI Workplace" },
       { name: "twitter:description", content: "Your Cortex activity, generation stats, and productivity insights at a glance." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/dfc83d84-ac7c-4eff-9da7-dd874b7a49fb" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/dfc83d84-ac7c-4eff-9da7-dd874b7a49fb" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/xWfdaW05isUT6lgrKSIXLB4Wts32/social-images/social-1784192675414-ChatGPT_Image_Jul_16,_2026,_11_03_47_AM.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/xWfdaW05isUT6lgrKSIXLB4Wts32/social-images/social-1784192675414-ChatGPT_Image_Jul_16,_2026,_11_03_47_AM.webp" },
     ],
     links: [
       {
@@ -110,7 +110,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,
