@@ -80,20 +80,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Cortex — AI Workplace Productivity Assistant" },
+      { title: "Overview — Cortex AI Workplace" },
       {
         name: "description",
         content:
-          "Cortex automates workplace tasks with AI: draft emails, summarize meetings, plan your week, and research topics — all in one sleek workspace.",
+          "Your Cortex activity, generation stats, and productivity insights at a glance.",
       },
-      { property: "og:title", content: "Cortex — AI Workplace Productivity Assistant" },
+      { property: "og:title", content: "Overview — Cortex AI Workplace" },
       {
         property: "og:description",
         content:
-          "Draft emails, summarize meetings, plan schedules, and research topics with an AI copilot built for professionals.",
+          "Your Cortex activity, generation stats, and productivity insights at a glance.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Overview — Cortex AI Workplace" },
+      { name: "twitter:description", content: "Your Cortex activity, generation stats, and productivity insights at a glance." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3b621d29-6362-429f-9dfc-22d0b7711718/id-preview-62537d2b--36f252f1-a963-4187-8011-de9b7ecdb084.lovable.app-1784183813475.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3b621d29-6362-429f-9dfc-22d0b7711718/id-preview-62537d2b--36f252f1-a963-4187-8011-de9b7ecdb084.lovable.app-1784183813475.png" },
     ],
     links: [
       {
