@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label";
 import { PageHeader } from "@/components/PageHeader";
 import { AiOutput } from "@/components/AiOutput";
 import { researchTopic } from "@/lib/ai.functions";
+import { trackGeneration } from "@/lib/generations";
 
 export const Route = createFileRoute("/research")({
   head: () => ({
@@ -33,6 +34,7 @@ function ResearchPage() {
     try {
       const res = await fn({ data: { topic } });
       setOutput(res.text);
+      trackGeneration("research");
     } catch (e) {
       toast.error(e instanceof Error ? e.message : "Failed");
     } finally {

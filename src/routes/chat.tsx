@@ -16,6 +16,7 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { chat } from "@/lib/ai.functions";
+import { trackGeneration } from "@/lib/generations";
 
 export const Route = createFileRoute("/chat")({
   head: () => ({

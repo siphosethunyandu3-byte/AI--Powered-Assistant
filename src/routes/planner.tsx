@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label";
 import { PageHeader } from "@/components/PageHeader";
 import { AiOutput } from "@/components/AiOutput";
 import { planTasks } from "@/lib/ai.functions";
+import { trackGeneration } from "@/lib/generations";
 
 export const Route = createFileRoute("/planner")({
   head: () => ({
@@ -34,6 +35,7 @@ function PlannerPage() {
     try {
       const res = await fn({ data: { tasks, horizon } });
       setOutput(res.text);
+      trackGeneration("planner");
     } catch (e) {
       toast.error(e instanceof Error ? e.message : "Failed");
     } finally {
