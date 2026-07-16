@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label";
 import { PageHeader } from "@/components/PageHeader";
 import { AiOutput } from "@/components/AiOutput";
 import { summarizeNotes } from "@/lib/ai.functions";
+import { trackGeneration } from "@/lib/generations";
 
 export const Route = createFileRoute("/notes")({
   head: () => ({
@@ -36,6 +37,7 @@ function NotesPage() {
     try {
       const res = await fn({ data: { notes } });
       setOutput(res.text);
+      trackGeneration("notes");
     } catch (e) {
       toast.error(e instanceof Error ? e.message : "Failed");
     } finally {

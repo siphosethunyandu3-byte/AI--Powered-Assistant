@@ -29,6 +29,7 @@ import {
 import { PageHeader } from "@/components/PageHeader";
 import { AiOutput } from "@/components/AiOutput";
 import { generateEmail } from "@/lib/ai.functions";
+import { trackGeneration } from "@/lib/generations";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/email")({
@@ -156,6 +157,7 @@ function EmailPage() {
     try {
       const res = await fn({ data: { context, tone, recipient: recipient || undefined } });
       setOutput(res.text);
+      trackGeneration("email");
     } catch (e) {
       toast.error(e instanceof Error ? e.message : "Generation failed");
     } finally {
