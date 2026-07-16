@@ -98,6 +98,7 @@ function ChatPage() {
     try {
       const res = await fn({ data: { messages: next } });
       setMessages([...next, { role: "assistant", content: res.text }]);
+      trackGeneration("chat");
     } catch (e) {
       toast.error(e instanceof Error ? e.message : "Failed");
       setMessages(next);
